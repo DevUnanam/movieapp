@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="login.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fig Flix</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <link rel="stylesheet" href="style.css">
+ 
+
+  
+
 </head>
 <body>
-    <div class="container">
-        <h2>Welcome back!</h2>
-        <form action="login_process.php" method="POST">
-            <label for="email_or_username">Email or Username:</label>
-            <input type="text" id="email_or_username" name="email_or_username" required>
+ <section id ="signin" class="section-p1">
+  <div class="sigin1">
+  <h2>Welcome to FigFlix</h2>
+   <p>Type your phone number and password to log in or <br> create a new account</p>
+  </div>
+ 
+  <div class="signupForm">
+  <form id="signupForm">
+   <div>
+    <input placeholder="Phone number" type="number" id="phoneNumber" name="phoneNumber" required>
+   </div>
+   <div>
+    <input placeholder="Password" type="password" id="password" name="password" required>
+   </div> 
+   <div>
+    <a href="index.html"><button class="normal" type="submit">Log in</button></a>
+  </div>
+  </form>
+    <p>If you don't have an account <a href="signup.html">Sign up here</a></p>
+  </div>
+ </section>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Sign in</button>
-        </form>
-
-        <form action="index.html">
-            <button type="submit">Cancel</button>
-        </form>
-
-        <div class="link">
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-            <p><a href="forgot_password.html">Forgot your password?</a></p>
-        </div>
+  <section id="apps" class="section-p1">
+   <div>
+    <a href="index.html"><button class="normal"><i class="far fa-envelope"></i> &nbsp; &nbsp; &nbsp; Log in with Email</button></a>
+    <a href="index.html"><button id="facebook" class="normal"><i class="fab fa-facebook-f"></i> &nbsp; &nbsp; &nbsp; Log in with Facebook</button></a>
+    <a href="index.html"><button id="apple" class="normal"><i class="fab fa-apple"></i> &nbsp; &nbsp; &nbsp; Log in with Apple</button></a>
+   </div>
+   
+    <div>
+      <p>For further support, you may visit the help center or contact  <br> our customer service team.</p>
     </div>
+    </section>
 
     <footer>
         <div class="footer-container">
