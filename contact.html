@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="contact.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ron Empire</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <header>
+        <!-- section for the navigation bar -->
         <div class="container">
-            <h1>FigFlix</h1>
+            
             <nav>
-                <ul>
+                <ul class="sidebar">
+                    
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">Series</a></li>
                     <li><a href="#">Trending</a></li>
                     <li><a href="#">Genre</a></li>
+                    <div class="search-bar">
+                        <a class="login-btn" href="login.html">Login</a>
+                        <a class="signup-btn" href="signup.html">Signup</a>
+                    </div>
+                </ul>
+                <!-- this part is hideen on mobile devices -->
+                <ul class="navitems">
+                    <h1>FigFlix</h1>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">Movies</a></li>
+                    <li class="hideOnMobile"><a href="#">Series</a></li>
+                    <li class="hideOnMobile"><a href="#">Trending</a></li>
+                    <li class="hideOnMobile"><a href="#">Genre</a></li>
+                    <div class="search-bar">
+                        <input class="search-input" type="text" placeholder="Search...">
+            <button class="search-icon" type="submit"><i class="fas fa-search"></i></button>
+                        <a class="login-btn hideOnMobile" href="login.html">Login</a>
+                        <a class="signup-btn hideOnMobile" href="signup.html">Signup</a>
+                    </div>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
-            <div class="access-btn">
-                <a href="login.html"><button class="login-btn">login</button></a>
-                <a href="signup.html"><button class="signup-btn">signup</button></a>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit">Search</button>
-                </div>
-            </div>
+            
             
         </div>
     </header>
-    <div class="contact">
-        <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
-        <a href="https://twitter.com/youraccount" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com/youraccount" target="_blank">Instagram</a>
-        <a href="https://t.me/yourchannel" target="_blank">Telegram</a>
-    </div>
-    
-    <footer>
-        <div class="footer-container">
-            <div class="about-us">
-                <h2>About Us</h2>
-                <ul>
-                    <li><a href="termsofservice.html">Terms of Service</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+
+    <section id="page-header" class="about-header">
+        <h2>#Let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+      </section>
+
+      <section id="form-details" >
+        <form action="">
+          <input type="text" placeholder="Your name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Subject">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <button class="normal">Submit</button>
+        </form>
+
+        <div class="people">
+            <div>
+              <img src="img/img10.png" alt="">
+              <p><span>Unanam Victoria</span> Developer <br> Phone: +234 7053830422 <br> Email: riaahh20@yahoo.com</p>
             </div>
-            <div class="copyright">
-                <p>&copy; 2024 FigFlix. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+            
+          </div>
+
 </body>
-</html>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="about-us">
+            <h2>About Us</h2>
+            <ul>
+                <li><a href="termsofservice.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 FigFlix. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
