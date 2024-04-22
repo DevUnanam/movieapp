@@ -395,7 +395,7 @@ form {
   form input[type="email"],
   form input[type="date"],
   form input[type="tel"] {
-    width: 100%;
+    width: 97%;
     padding: 5px;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -466,13 +466,23 @@ form {
   }
   
   textarea {
-    width: 100%;
+    width: 97%;
     padding: 5px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
 
+  #form-details form input,
+  #form-details form textarea {
+    width 80%% ;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e2e9e1;
+  }
+
+  
 
   
   #form-details img {
@@ -754,5 +764,24 @@ form {
   }
   #prodetails .single-pro-details {
     width: 100%;
-}
+    }
+
+    #form-details {
+    margin: 30px;
+    padding: 40px;
+  }
+  
+   #form-details form {
+    width: 50;
+   }
+  
+   #form-details img {
+    width: 55px;
+    height: 5vh;
+    border-radius: 80px;
+    margin-right: 5px;
+   }
+   .people {
+    margin-left: 20px;
+   }
 }
