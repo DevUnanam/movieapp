@@ -1,95 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="termsofservice.css">
-    <title>Terms of service - FigFlix</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ron Empire</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <link rel="stylesheet" href="style.css">
+ 
+
+  
+
 </head>
+
 <body>
     <header>
+        <!-- section for the navigation bar -->
         <div class="container">
-            <h1>FigFlix</h1>
+            
             <nav>
-                <ul>
+                <ul class="sidebar">
+                    
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">Series</a></li>
                     <li><a href="#">Trending</a></li>
                     <li><a href="#">Genre</a></li>
+                    <div class="search-bar">
+                        <a class="login-btn" href="login.html">Login</a>
+                        <a class="signup-btn" href="signup.html">Signup</a>
+                    </div>
+                </ul>
+                <!-- this part is hideen on mobile devices -->
+                <ul class="navitems">
+                    <h1>FigFlix</h1>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">Movies</a></li>
+                    <li class="hideOnMobile"><a href="#">Series</a></li>
+                    <li class="hideOnMobile"><a href="#">Trending</a></li>
+                    <li class="hideOnMobile"><a href="#">Genre</a></li>
+                    <div class="search-bar">
+                        <input class="search-input" type="text" placeholder="Search...">
+            <button class="search-icon" type="submit"><i class="fas fa-search"></i></button>
+                        <a class="login-btn hideOnMobile" href="login.html">Login</a>
+                        <a class="signup-btn hideOnMobile" href="signup.html">Signup</a>
+                    </div>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
-            <div class="access-btn">
-                <a href="login.html"><button class="login-btn">login</button></a>
-                <a href="signup.html"><button class="signup-btn">signup</button></a>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit">Search</button>
-                </div>
-            </div>
+
+            
+            
             
         </div>
     </header>
-    <div class="terms">
-        <p><Strong>Terms of service</Strong></p>
+
+  <section id="page-header" class="about-header">
+  </section>
+
+  <section id="privacy" class="section-p1">
+    <h2>FigFlix Terms & Conditions Notice</h2>
+    <p>Please read these Terms carefully before proceeding with any feature provided by this site.
+      <br><br>
+      when you sign up to the site to gain access to any of our uploads, you agree to be bound by these Terms below:</p>
+      
+      <div>
+        <h3>Purchases</h3>
         <p>
-This Agreement contains the complete terms and conditions that apply to your participation in our site.
-<br>If you wish to use the site including its tools and services please read these terms of use carefully.
-<br>By accessing this site or using any part of the site or any content or services hereof, you agree to 
-<br>become bound by these terms and conditions. If you do not agree to all the terms and conditions, 
-<br>then you may not access the site or use the content or any services in the site.
-</p>
-<p><strong>Modifications of Terms and Conditions</strong></p>
-<p>
-Amendments to this agreement can be made and effected by us from time to time without specific notice to your end.
-<br>Agreement posted on the Site reflects the latest agreement and you should carefully review the same before you use our site.
-</p>
-<p><strong>Use of the site</strong></p>
-<p>
-The Site allows you to post offers, sell, advertise, bid and shop online. However, you are prohibited to do the following acts, to wit: 
-<br>(a) use our sites, including its services and or tools if you are not able to form legally binding contracts,
-<br> are under the age of 18, or are temporarily or indefinitely suspended from using our sites, services, or tools 
-<br>(b) posting of an items in inappropriate category or areas on our sites and services; 
-<br>(c) collecting information about users' personal information; 
-<br>(d) maneuvering the price of any item or interfere with other users' listings;
-<br>(f) post false, inaccurate, misleading, defamatory, or libelous content; 
-<br>(g) take any action that may damage the rating system.</p>
+          <span>1.1</span> If you wish to purchase any product through any of our platforms, you may be asked to supply certain information relevant to your purchase.
+          <br><br>
+          <span>1.2</span> Any item purchased from Figflix either online or at the walk-in store would only be exchanged or refunded for within 72 hours of purchase. After 72 hours, RonEmpire will not accept the items nor offer any refund.
+          <br><br>
+          <span>1.3</span> Once FigFlix receives your item, we will inspect it and notify you that we have received your returned item. We will immediately notify you on the status of your refund after inspecting the item.
+          <br><br>
+          <span>1.4</span> Refund/exchange only applies when the items are in the exact same condition with which it was delivered. If the items have been tampered with (torn or any form of damage) RonEmpire will not accept it back.
+          
+          <span>1.5</span> If your refund is approved, we will initiate a refund to your chosen bank account within 72hours.</p>
+      </div>
+      <div>
+        <h3>Links to other websites</h3>
+        <p>
+           <span>2.1</span> Products purchased via our online channels may contain links to third-party websites or services that are not owned or controlled by RonEmpire.
+           <br><br>
+           <span>2.2</span> FigFlix has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party websites or services. You further acknowledge and agree that RonEmpire shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such websites or services.
+           <br><br>
+            We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit.</p>
+      </div>
+      <div>
+        <h3>Warranty disclaimer</h3>
+        <p>
+          <span>3.1 The goods provided by Figflix are provided on a “AS IS” and “AS AVAILABLE” basis and to the extent permitted by law without warranties of any kind, either express or implied</p></span>
+      </div>
+      <div>
+        <h3>Governing Law</h3>
+        <p>
+          <span>4.1</span> Any issue or dispute that may arise with respect to goods that are purchased from RonEmpire, such issues or disputes will at first instance be resolved through good faith negotiations initiated by the aggrieved party.
+          <br><br>
+          <span>4.2</span> In the event that parties are unable to resolve such issues through good faith negotiations, either party reserves the right to approach any court of competent jurisdiction for redress.</p>
+      </div>
+      <div>
+        <h3>Changes</h3>
+        <p>
+            <span>5.1</span> We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>
+          If you have any questions about this Terms & Conditions, please <a href="contact.html">contact us.</a></p>
+      </div>
 
-<p><strong>Registration Information</strong></p>
-<p>For you to complete the sign-up process in our site, you must provide your full legal name, current address, 
-    <br>a valid email address, member name and any other information needed in order to complete the signup process. 
-    <br>You must qualify that you are 18 years or older and must be responsible for keeping your password secure and 
-    <br>be responsible for all activities and contents that are uploaded under your account. 
-    <br>You must not transmit any worms or viruses or any code of a destructive nature.
-    <br>Any information provided by you or gathered by the site or third parties during any visit to the site shall be 
-    <br>subject to the terms of GoStream's Privacy Policy.</p>
+  </section>
 
-<p><strong>Modifications of Terms and Conditions</strong></p>
-<p>Amendments to this agreement can be made and effected by us from time to time without specific notice to your end.
-    <br>Agreement posted on the Site reflects the latest agreement and you should carefully review the same before you use our site.</p>
-    
-<p><strong>Registration Information</strong></p>
-For you to complete the sign-up process in our site, you must provide your full legal name, current address, a valid email address,
-<br> member name and any other information needed in order to complete the signup process. 
-<br>You must qualify that you are 18 years or older and must be responsible for keeping your password secure and be responsible
-<br> for all activities and contents that are uploaded under your account. 
-<br>You must not transmit any worms or viruses or any code of a destructive nature. 
-<br>Any information provided by you or gathered by the site or third parties during any visit to the site 
-<br>shall be subject to the terms of FigFlix's Privacy Policy.
-    </div>
-    <footer>
-        <div class="footer-container">
-            <div class="about-us">
-                <h2>About Us</h2>
-                <ul>
-                    <li><a href="termsofservice.html">Terms of Service</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 FigFlix. All rights reserved.</p>
-            </div>
+  <!--about us segment -->
+  <footer>
+    <div class="footer-container">
+        <div class="about-us">
+            <h2>About Us</h2>
+            <ul>
+                <li><a href="termsofservice.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="copyright">
+            <p>&copy; 2024 FigFlix. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
