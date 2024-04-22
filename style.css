@@ -181,6 +181,17 @@ footer {
     padding: 0 40px;
     margin: 10px;
 }
+
+#movie-list .listing4{
+    display: flex;
+    width: 15%;
+    height: 80vh;
+    background-image: url("img/img5.png");
+    background-size: cover;
+    flex-direction: column;
+    padding: 0 40px;
+    margin: 10px;
+}
 /*will make the images hover when mouse is rolled over it*/
 .listing:hover, 
 .listing1:hover,
