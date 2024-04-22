@@ -475,7 +475,7 @@ form {
 
   #form-details form input,
   #form-details form textarea {
-    width 80% ;
+    width: 80%;
     padding: 12px 15px;
     outline: none;
     margin-bottom: 20px;
