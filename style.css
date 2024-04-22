@@ -229,7 +229,11 @@ footer {
 .listing:hover, 
 .listing1:hover,
 .listing2:hover,
-.listing3:hover {
+.listing3:hover,
+.listing4:hover,
+.listing5:hover,
+.listing6:hover,
+.listing7:hover {
     transform: scale(1.2);
     cursor: pointer;
 
