@@ -192,6 +192,39 @@ footer {
     padding: 0 40px;
     margin: 10px;
 }
+
+#movie-list .listing5{
+    display: flex;
+    width: 15%;
+    height: 80vh;
+    background-image: url("img/img6.png");
+    background-size: cover;
+    flex-direction: column;
+    padding: 0 40px;
+    margin: 10px;
+}
+
+#movie-list .listing6{
+    display: flex;
+    width: 15%;
+    height: 80vh;
+    background-image: url("img/img7.png");
+    background-size: cover;
+    flex-direction: column;
+    padding: 0 40px;
+    margin: 10px;
+}
+
+#movie-list .listing7{
+    display: flex;
+    width: 15%;
+    height: 80vh;
+    background-image: url("img/img8.png");
+    background-size: cover;
+    flex-direction: column;
+    padding: 0 40px;
+    margin: 10px;
+}
 /*will make the images hover when mouse is rolled over it*/
 .listing:hover, 
 .listing1:hover,
