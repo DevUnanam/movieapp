@@ -851,7 +851,7 @@ form {
   /* Adjust styles here */
   .container {
       /* Example: Adjust container width */
-      width: 100%;
+      width: 1200%;
       margin: 0 auto;
   }
 
@@ -862,6 +862,13 @@ form {
   .menu-button {
       display: none;
   }
+
+  .pro {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width for three columns */
+    margin: 10px;
+  }
+
+ 
   
 
 }
