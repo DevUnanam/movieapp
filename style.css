@@ -742,9 +742,9 @@ form {
       }
 
        /* signin page */
-  #signin .sigin1 h2 {
+    #signin .sigin1 h2 {
     font-size: 1.2em;
-   }
+  }
  
    #phoneNumber,
    #password {
@@ -798,8 +798,43 @@ form {
 
    #movie-list .listing {
     width: 100%; /* Set width to 100% for full-width display */
+    margin: 10px 0;
+   }
+
+    #movie-list .listing1 {
+    width: 100%; /* Set width to 100% for full-width display */
     margin: 10px 0; /* Adjust margin for spacing */
-}
+    }
+
+    #movie-list .listing2 {
+      width: 100%; /* Set width to 100% for full-width display */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    #movie-list .listing3 {
+      width: 100%; /* Set width to 100% for full-width display */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    #movie-list .listing4 {
+      width: 100%; /* Set width to 100% for full-width display */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    #movie-list .listing5 {
+      width: 100%; /* Set width to 100% for full-width display */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    #movie-list .listing6 {
+      width: 100%; /* Set width to 100% for full-width display */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    #movie-list .listing7 {
+      width: 100%; /* Set width to 100% for full-width display */
+      margin: 10px 0; /* Adjust margin for spacing */
+    }
 }
 
 @media (min-width: 768px) {
