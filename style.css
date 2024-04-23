@@ -757,10 +757,13 @@ form {
    #prodetails {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   #prodetails .single-pro-image {
     width: 100%;
-    margin-left: 0px;
+    margin-bottom: 20px
+    height: auto;
+    max-width: 100%;
   }
   #prodetails .single-pro-details {
     width: 100%;
