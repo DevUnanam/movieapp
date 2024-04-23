@@ -706,6 +706,13 @@ form {
     .hideOnMobile{
         display: none;
     }
+
+    .container {
+      /* Example: Adjust container width */
+      width: 100%;
+      margin: 0 auto;
+  }
+
     .menu-button{
         display: block;
     }
