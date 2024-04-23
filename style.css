@@ -762,7 +762,7 @@ form {
   #prodetails .single-pro-image {
     width: 100%;
     margin-bottom: 20px
-    height: auto;
+    height auto;
     max-width: 100%;
   }
   #prodetails .single-pro-details {
