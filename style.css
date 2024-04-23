@@ -702,7 +702,7 @@ form {
   
 
 /*media query*/
-@media(max-width: 800px){
+@media(max-width: 768px){
     .hideOnMobile{
         display: none;
     }
@@ -784,4 +784,40 @@ form {
    .people {
     margin-left: 20px;
    }
+
+   /*a change*/
+   .sidebar{
+    display: none;
+   }
+
+   .navitems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }  
+
+   #movie-list .listing {
+    width: 100%; /* Set width to 100% for full-width display */
+    margin: 10px 0; /* Adjust margin for spacing */
+}
+}
+
+@media (min-width: 768px) {
+  /* Adjust styles here */
+  .container {
+      /* Example: Adjust container width */
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  #movie-list .listing {
+    width: 30%; /* Set width to 30% for multi-column layout */
+}
+ 
+  .hideOnMobile {
+      display: block;
+  }
+  .menu-button {
+      display: none;
+  }
 }
