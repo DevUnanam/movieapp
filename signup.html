@@ -1,66 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FigFlix</title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-  <link rel="stylesheet" href="style.css">
- 
-
-  
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FigFlix - Signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <section id ="signin" class="section-p1">
-  <div class="sigin1">
-  <h2>Welcome to FigFlix</h2>
-   <p>Type your phone number and password to log in or <br> create a new account</p>
-  </div>
- 
-  <div class="signupForm">
-  <form id="signupForm">
-   <div>
-    <input placeholder="First Name" type="text" id="frist-name" name="frist-name" required>
-   </div>
-   <div>
-    <input placeholder="Last Name" type="text" id="last-name" name="last-name" required>
-   </div> 
-   <div>
-    <input placeholder="Password" type="password" id="password" name="password" required>
-   </div>
-   <div>
-    <input placeholder="Phone Number" type="text" id="password" name="phoneNumber" required>
-   </div>
-   <div>
-    <a href="index.html"><button class="normal" type="submit">Sign Up</button></a>
-  </div>
-  </form>
-  
-    <p>By continuing, you agree to FigFlix <a href="termsofservice.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-    <p>If you already have an account <a href="signin.html">Sign in here</a></p>
-  </div>
- </section>
-
-  <section id="apps" class="section-p1">
-   <div>
-    <a href="index.html"><button class="normal"><i class="far fa-envelope"></i> &nbsp; &nbsp; &nbsp; Sign up with Email</button></a>
-    <a href="index.html"><button id="facebook" class="normal"><i class="fab fa-facebook-f"></i> &nbsp; &nbsp; &nbsp; Sign up with Facebook</button></a>
-    <a href="index.html"><button id="apple" class="normal"><i class="fab fa-apple"></i> &nbsp; &nbsp; &nbsp; Sign up with Apple</button></a>
-   </div>
-    <footer>
-        <div class="footer-container">
-            <div class="about-us">
-                <h2>About Us</h2>
-                <ul>
-                    <li><a href="termsofservice.html">Terms of Service</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 FigFlix. All rights reserved.</p>
-            </div>
+    <section id="signup" class="section-p1">
+        <div class="signupForm">
+            <h2>Welcome to FigFlix</h2>
+            <p>Type your email and password to create a new account</p>
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+            <p>By continuing, you agree to FigFlix <a href="termsofservice.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+            <p>If you already have an account <a href="login.html">Sign in here</a></p>
         </div>
-    </footer>
+    </section>
+
+    <!-- Bootstrap JS and jQuery (for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Ensure this is correctly linked -->
 </body>
 </html>
