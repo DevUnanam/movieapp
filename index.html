@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Favicon for site title bar -->
     <link rel="icon" type="image/png" href="img/favicon.png">
     <title>FigFlix</title>
+    <style>
+        .scroll-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .scroll-content {
+            display: inline-block;
+            animation: scroll-left 20s linear infinite;
+        }
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -39,6 +58,7 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0 mx-auto" onsubmit="searchMovies(event)">
                         <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search..." aria-label="Search" oninput="autocompleteMovies()">
+                        <div class="autocomplete-results"></div> <!-- Moved inside form for better positioning -->
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search search-icon"></i></button>
                     </form>
                     <ul class="navbar-nav ml-auto">
@@ -50,19 +70,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="autocomplete-results"></div>
-                <div class="sidebar">
-                    <h3>FigFlix</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="#">Series</a></li>
-                        <li><a href="#">Trending</a></li>
-                        <li><a href="#">Genre</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="signup.html">Signup</a></li>
-                    </ul>
-                </div>
             </nav>
         </div>
     </header>
@@ -70,20 +77,17 @@
     <main class="container">
         <div class="row">
             <div class="col-md-12">
-                <section id="slider" class="swiper-container">
-                    <marquee behavior="scroll" direction="left">
-                        <div class="swiper">
-                            <img src="img/YOUR.png" alt="Image 1">
-                            <img src="img/TICKET.png" alt="Image 2">
-                            <img src="img/TO.png" alt="Image 2">
-                            <img src="img/WATCH.png" alt="Image 2">
-                            <img src="img/ENDLESS.png" alt="Image 2">
-                            <img src="img/ENTERTAINMENT.png" alt="Image 2">
-                            <img src="img/ANYTIME.png" alt="Image 2">
-                            <img src="img/ANYWHERE.png" alt="Image 2">
-                        </div>
-                    </marquee>
-                    <div class="swiper-pagination"></div>
+                <section id="slider" class="scroll-container">
+                    <div class="scroll-content">
+                        <img src="img/YOUR.png" alt="Image 1">
+                        <img src="img/TICKET.png" alt="Image 2">
+                        <img src="img/TO.png" alt="Image 3">
+                        <img src="img/WATCH.png" alt="Image 4">
+                        <img src="img/ENDLESS.png" alt="Image 5">
+                        <img src="img/ENTERTAINMENT.png" alt="Image 6">
+                        <img src="img/ANYTIME.png" alt="Image 7">
+                        <img src="img/ANYWHERE.png" alt="Image 8">
+                    </div>
                 </section>
             </div>
         </div>
@@ -96,16 +100,16 @@
                         <img src="img/img4.png" alt="Image 1">
                     </div>
                     <div class="carousel-card">
-                        <img src="img/img5.png" alt="Image 1">
+                        <img src="img/img5.png" alt="Image 2">
                     </div>
                     <div class="carousel-card">
-                        <img src="img/img2.png" alt="Image 1">
+                        <img src="img/img2.png" alt="Image 3">
                     </div>
                     <div class="carousel-card">
-                        <img src="img/img7.png" alt="Image 1">
+                        <img src="img/img7.png" alt="Image 4">
                     </div>
                     <div class="carousel-card">
-                        <img src="img/img8.png" alt="Image 1">
+                        <img src="img/img8.png" alt="Image 5">
                     </div>
                 </div>
             </div>
@@ -113,8 +117,299 @@
         </div>
 
         <div class="search-results"></div>
+
+          <!-- Recommended Movies Section -->
+        <section class="recommended-section my-3">
+            <h2 class="text-center">Recommended Movies</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Movie 1 -->
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/insideout2.png" alt="insideout2" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>Inside Out 2</h5>
+                                <p>96 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Movie 2 -->
+                    <div class="swiper-slide">
+                        <a href="movie-detail2.html">
+                            <img src="img/Ezra.png" alt="Recommended Movie 2" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>Ezra</h5>
+                                <p>101 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/Celine.png" alt="Celine Dion" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>I Am: Celine Dion</h5>
+                                <p>103 min</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/Furiosa.png" alt="Furiosa: A Mad Max Saga" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>Furiosa: A Mad Max Saga</h5>
+                                <p>148 min</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/Kindness.png" alt="Kinds of Kindness" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>Kinds of Kindness</h5>
+                                <p>164 min</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/Trigger.png" alt="Trigger Warning" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>Trigger Warning</h5>
+                                <p>106 min</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/bikers.png" alt="The Bikeriders" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>The Bikeriders</h5>
+                                <p>116 min</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/if.png" alt="IF" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>IF</h5>
+                                <p>104 min</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/glow.png" alt="I Saw the TV Glow" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>I Saw the TV Glow</h5>
+                                <p>100 min</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="movie-detail1.html">
+                            <img src="img/grown.png" alt="We Grown Now" class="img-fluid">
+                            <div class="movie-info">
+                                <h5>We Grown Now</h5>
+                                <p>93 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Repeat for 10 movies -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="trending-section my-5 w-100">
+            <h2 class="text-center">TRENDING</h2>
+            <div class="row">
+                <!-- Movie 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/infallibles.png" class="card-img-top" alt="The Infallibles">
+                        <div class="card-body">
+                            <h5 class="card-title">The Infallibles</h5>
+                            <p class="card-text">2021 | 99 min</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Movie 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Heron.png" class="card-img-top" alt="The Boy and the Heron">
+                        <div class="card-body">
+                            <h5 class="card-title">The Boy and the Heron</h5>
+                            <p class="card-text">2020 | 124 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Ghostbusters.png" class="card-img-top" alt="Ghostbusters: Frozen Empire">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghostbusters: Frozen Empire</h5>
+                            <p class="card-text">2024 | 115 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Blackwater.png" class="card-img-top" alt="Blackwater Lane">
+                        <div class="card-body">
+                            <h5 class="card-title">Blackwater Lane</h5>
+                            <p class="card-text">2024 | 108 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Acolyte.png" class="card-img-top" alt="The Acolyte">
+                        <div class="card-body">
+                            <h5 class="card-title">The Acolyte</h5>
+                            <p class="card-text">2024 | 42 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Boys.png" class="card-img-top" alt="The Boys">
+                        <div class="card-body">
+                            <h5 class="card-title">The Boys</h5>
+                            <p class="card-text">2019 | 60 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/bears.png" class="card-img-top" alt="The Bear">
+                        <div class="card-body">
+                            <h5 class="card-title">The Bear</h5>
+                            <p class="card-text">2022 | 60 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/dark.png" class="card-img-top" alt="Dark Matter">
+                        <div class="card-body">
+                            <h5 class="card-title">Dark matter</h5>
+                            <p class="card-text">2022 | 60 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/ultraman.png" class="card-img-top" alt="Ultraman: Rising">
+                        <div class="card-body">
+                            <h5 class="card-title">Ultraman: Rising</h5>
+                            <p class="card-text">2024 | 117 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Terracota.png" class="card-img-top" alt="Mysteries of the Terracotta Warriors">
+                        <div class="card-body">
+                            <h5 class="card-title">Mysteries of the Terracotta Warriors</h5>
+                            <p class="card-text">2024 | 77 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/London.png" class="card-img-top" alt="The London Underground Killer">
+                        <div class="card-body">
+                            <h5 class="card-title">The London Underground Killer</h5>
+                            <p class="card-text">2024 | 91 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/kindness.png" class="card-img-top" alt="Kinds of Kindness">
+                        <div class="card-body">
+                            <h5 class="card-title">Kinds of Kindness</h5>
+                            <p class="card-text">2024 | 164 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/horizon.png" class="card-img-top" alt="Kinds of Kindness">
+                        <div class="card-body">
+                            <h5 class="card-title">Horizon: An American Saga - Chapter 1</h5>
+                            <p class="card-text">2024 | 181 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Danger.png" class="card-img-top" alt="Danger in the Dorm">
+                        <div class="card-body">
+                            <h5 class="card-title">Danger in the Dorm</h5>
+                            <p class="card-text">2024 | 86 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="img/Summer.png" class="card-img-top" alt="Summer Camp">
+                        <div class="card-body">
+                            <h5 class="card-title">Summer Camp</h5>
+                            <p class="card-text">2024 | 95 min</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Repeat for 16 movies -->
+            </div>
+        </section>
+        
     </main>
 
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            
+        });
+    </script>
+    
 </body>
 </html>

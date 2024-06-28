@@ -3,31 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FigFlix - Login</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Login</title>
 </head>
 <body>
-    <section id="signin" class="section-p1">
-        <div class="signin-box">
-            <h2>Welcome to FigFlix</h2>
-            <p>Type your email and password to log in or create a new account</p>
-            <form id="loginForm">
-                <div>
-                    <input placeholder="Email" type="email" id="email" name="email" required>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="login-email">Email address</label>
+                                <input type="email" class="form-control" id="login-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Password</label>
+                                <input type="password" class="form-control" id="login-password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <p>Don't have an account? <a href="signup.html">Signup</a></p>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Ldx8fcpAAAAAESOnvFISL_vECYZbfzq9PjUWaAF"></div> <!-- reCAPTCHA integration -->
+                    </div>
                 </div>
-                <div>
-                    <input placeholder="Password" type="password" id="password" name="password" required>
-                </div>
-                <div class="g-recaptcha" data-sitekey="6Ldx8fcpAAAAAESOnvFISL_vECYZbfzq9PjUWaAF"></div>
-                <div>
-                    <button class="normal" type="submit">Log in</button>
-                </div>
-            </form>
-            <p>If you don't have an account <a href="signup.html">Sign up here</a></p>
+            </div>
         </div>
-    </section>
-    <script src="script.js"></script> <!-- Ensure this is correctly linked -->
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -8,25 +8,22 @@ body {
   align-items: center;
 }
 
-
 .swiper-container {
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
-
 
 #slider img {
   height: 20vh;
 }
-
 
 #slider .swiper {
   display: flex;
   flex-direction: row;
 }
 
-
-/*sidebar*/
+/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -42,8 +39,7 @@ body {
   justify-content: flex-start;
 }
 
-
-.menu-button{
+.menu-button {
   display: block;
 }
 
@@ -51,9 +47,6 @@ body {
 .navitems.hideOnMobile {
   display: none;
 }
-
-
-
 
 footer {
   position: relative;
@@ -69,6 +62,7 @@ footer {
   margin: auto;
   border-radius: 10%;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
 }
 
 .carousel-wrapper {
@@ -87,14 +81,14 @@ footer {
   text-align: center;
   background-color: white;
   border: 1px solid #ddd;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 10px;
@@ -130,7 +124,7 @@ footer {
 }
 
 .search-results {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .movie {
@@ -214,15 +208,36 @@ a:hover {
   margin: 20px 0;
 }
 
+/* Trending Section */
+.trending-section {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Container Adjustment */
+main .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .signin-box, .signupForm {
       padding: 20px;
+  }
+  
+  main .container {
+      padding: 0 15px;
   }
 }
 
 @media (max-width: 480px) {
   input[type="number"], input[type="password"], input[type="text"], input[type="email"] {
       width: calc(100% - 16px);
+  }
+
+  main .container {
+      padding: 0 10px;
   }
 }

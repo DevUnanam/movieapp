@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FigFlix - Signup</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section id="signup" class="section-p1">
-        <div class="signupForm">
-            <h2>Welcome to FigFlix</h2>
-            <p>Type your email and password to create a new account</p>
-            <form id="signupForm">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <title>Signup</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>Signup</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="signupForm">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" class="form-control" id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="last-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text password-toggle"><i class="fas fa-eye"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Signup</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Already have an account? <a href="login.html">Login</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="password" placeholder="Password" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign Up</button>
-            </form>
-            <p>By continuing, you agree to FigFlix <a href="termsofservice.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-            <p>If you already have an account <a href="login.html">Sign in here</a></p>
+            </div>
         </div>
-    </section>
-
-    <!-- Bootstrap JS and jQuery (for Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script> <!-- Ensure this is correctly linked -->
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
